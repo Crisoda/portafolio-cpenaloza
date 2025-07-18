@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian David Peñaloza Barón - Asesor Jurídico</title>
+    <head>
+  <meta charset="UTF-8">
+  <link rel="⚖️" type="image/png" href="⚖️" ⚖️ >
+  <title>Cristian David Peñaloza Barón - Asesor Jurídico</title>
+  <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --azul-cobalto: #1D3557;
+            --blanco-puro: #FFFFFF;
+            --amarillo-mostaza: #F4A261;
+            --gris-ceniza: #6C757D;
+            --verde-oscuro: #2A9D8F;
+            --whatsapp-green: #25D366;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--azul-cobalto);
+            background-color: var(--blanco-puro);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--azul-cobalto), var(--verde-oscuro));
+            color: var(--blanco-puro);
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(29, 53, 87, 0.2);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: clamp(1rem, 3vw, 1.2rem);
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .contact-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+        }
+
+        .whatsapp-btn {
+            background: var(--whatsapp-green);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: scale(1.05);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--blanco-puro);
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-container a {
+            color: var(--azul-cobalto);
+            text-decoration: none;
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .nav-container a:hover {
+            background: var(--amarillo-mostaza);
+            color: var(--blanco-puro);
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        section {
+            padding: clamp(2rem, 6vw, 4rem) 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            margin-bottom: 3rem;
+            color: var(--azul-cobalto);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--amarillo-mostaza);
+            border-radius: 2px;
+        }
+
+        /* About */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .about-text {
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            line-height: 1.8;
+            color: var(--gris-ceniza);
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .expertise-card {
+            background: var(--blanco-puro);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid var(--amarillo-mostaza);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .expertise-card:hover,
+        .expertise-card:focus-within {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(244, 162, 97, 0.3);
+        }
+
+        .expertise-icon {
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .expertise-card h3 {
+            color: var(--azul-cobalto);
+            margin-bottom: 0.5rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+        }
+
+        .expertise-card p {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            color: var(--gris-ceniza);
+        }
+        
+
+        /* Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--blanco-puro);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border-left: 5px solid var(--amarillo-mostaza);
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: var(--azul-cobalto);
+            margin-bottom: 1rem;
+            font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+        }
+
+        .service-card p {
+            color: var(--gris-ceniza);
+            margin-bottom: 1rem;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .service-price {
+            background: var(--verde-oscuro);
+            color: var(--blanco-puro);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .disclamer {
+            color: var(--gris-ceniza);
+            margin-bottom: 1rem;
+            font-size: clamp(0.7rem, 0.7vw, 0.7rem);
+            }
+
+        /* Pricing Table */
+        .pricing-table {
+            overflow-x: auto;
+            margin: 2rem 0;
+        }
+
+        table {
+            width: 100%;
+            min-width: 700px;
+            border-collapse: collapse;
+            background: var(--blanco-puro);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        th {
+            background: var(--azul-cobalto);
+            color: var(--blanco-puro);
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: rgba(244, 162, 97, 0.1);
+        }
+
+        /* Case Study */
+        .case-study {
+            background: linear-gradient(135deg, var(--verde-oscuro), var(--azul-cobalto));
+            color: var(--blanco-puro);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .case-study h3 {
+            font-size: clamp(1.5rem, 3vw, 1.8rem);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .case-study p {
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            line-height: 1.8;
+            text-align: center;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: var(--blanco-puro);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--azul-cobalto);
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--amarillo-mostaza);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .btn {
+            background: var(--amarillo-mostaza);
+            color: var(--blanco-puro);
+            border: none;
+            padding: 1rem 2rem;
+            font-size: clamp(1rem, 2.5vw, 1.1rem);
+            font-weight: 600;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            width: fit-content;
+            margin: 2rem auto 0;
+        }
+
+        .btn:hover {
+            background: var(--verde-oscuro);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(244, 162, 97, 0.4);
+        }
+
+        /* Process */
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .process-step {
+            text-align: center;
+            padding: 2rem;
+            background: var(--blanco-puro);
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        .process-step::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--amarillo-mostaza);
+            color: var(--blanco-puro);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .process-step h4 {
+            color: var(--azul-cobalto);
+            margin: 1rem 0;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+        }
+
+        .process-step p {
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            color: var(--gris-ceniza);
+        }
+
+        /* WhatsApp Floating Button
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--whatsapp-green);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 1000;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+            transition: all 0.3s ease;
+        } */
+
+        .whatsapp-float:hover {
+            background: #128C7E;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--azul-cobalto);
+            color: var(--blanco-puro);
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: var(--amarillo-mostaza);
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--blanco-puro);
+            text-decoration: none;
+            opacity: 0.9;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+        }
+
+        .footer-section a:hover {
+            opacity: 1;
+            color: var(--amarillo-mostaza);
+        }
+
+        /* Responsive Improvements */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+            }
+            
+            .nav-container {
+                gap: 0.5rem;
+            }
+            
+            .nav-container a {
+                padding: 0.4rem 0.8rem;
+            }
+            
+            .expertise-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 1rem 0;
+            }
+            
+            .service-card,
+            .expertise-card,
+            .process-step {
+                padding: 1.5rem;
+            }
+            
+            .contact-form {
+                padding: 1.5rem;
+            }
+            
+            .case-study {
+                padding: 2rem;
+            }
+        }
+
+        /* Animation improvements */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-in {
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+                .correo {
+        color: white !important;
+        text-decoration: none;
+        }
+
+        .correo:hover {
+        text-decoration: underline; /* opcional: efecto al pasar el cursor */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button
+    <button class="whatsapp-float" onclick="openWhatsApp()" title="Contáctame por WhatsApp">
+        📱
+    </button> -->
+
+    <header>
+        <div class="container">
+            <div class="hero animate-fade-in">
+                <h1>Cristian David Peñaloza Barón</h1>
+                <p>Asesor Jurídico | Especialista en Derecho Constitucional</p>
+                <div class="contact-info">
+                    <span>📍 Cali, Valle del Cauca</span>
+                    <span>
+                        📞 
+                        <a class="correo"  target="_blank"  href="https://web.whatsapp.com/send/?phone=573505206568&text=¡Hola Cristian! Vi tu portafolio jurídico y me gustaría agendar una reunión para obtener más información sobre tus servicios. ¿Podemos conversar?." onclick="openWhatsApp()" class="whatsapp-btn">
+                            350 520 6568 - WhatsApp
+                        </a>
+                    </span>
+                    <span> ✉️ <a  target="_blank" href="mailto:cpenaloza.legal@gmail.com" class="correo">cpenaloza.legal@gmail.com</a> </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <div class="nav-container">
+                <a href="#about">Quién Soy</a>
+                <a href="#services">Servicios</a>
+                <a href="#pricing">Precios</a>
+                <a href="#process">Proceso</a>
+                <a href="#contact">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title">🧭 Quién Soy</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Soy Cristian David Peñaloza Barón, abogado especializado en Derecho Constitucional, con un enfoque claro: <strong>la mejor manera de resolver los problemas jurídicos es anticiparse a ellos.</strong></p>
+
+                        <p>Mi formación en el área constitucional me permite comprender con mayor precisión las implicaciones normativas, las garantías fundamentales y los riesgos jurídicos asociados a decisiones tanto individuales como organizacionales. Además, cuento con <strong>formación en Alta Gerencia para la Era Digital</strong>, lo cual fortalece mi capacidad para asesorar en contextos de transformación empresarial, gestión del cambio y toma de decisiones estratégicas en entornos complejos.</p>
+                        <p>He trabajado con empresas de los sectores industrial, logístico y comercial, así como con personas naturales, a quienes he acompañado con éxito en la resolución de conflictos frente a entidades financieras, EPS y alcaldías municipales. Estas experiencias me han enseñado que un enfoque preventivo, claro y riguroso marca la diferencia. Mi propósito es brindar asesoría jurídica preventiva, efectiva y estratégica, <strong>orientada a que personas y organizaciones tomen decisiones informadas, eviten conflictos innecesarios y construyan relaciones jurídicas sólidas y sostenibles.</strong> Creo en la ética, la anticipación, el lenguaje claro y el compromiso real con las personas.</p>
+                    </div>
+                    
+                    <h3 style="margin-bottom: 1rem; color: var(--amarillo-mostaza); text-align: center; margin-bottom: 2rem; color: var(--azul-cobalto); font-size: clamp(1.5rem, 3vw, 1.8rem);">
+                        <span aria-hidden="true">⚖️</span> Experiencia y Especialización
+                    </h3>
+                    
+                    <div class="expertise-grid">
+                        <div class="expertise-card">
+                            <span class="expertise-icon" aria-hidden="true">🛡️</span>
+                            <h3>Derecho Constitucional</h3>
+                            <p>Especialización en derechos fundamentales, tutelas y protección constitucional</p>
+                        </div>
+                        <div class="expertise-card">
+                            <span class="expertise-icon" aria-hidden="true">📋</span>
+                            <h3>Derecho Administrativo</h3>
+                            <p>Derechos de petición, procedimientos administrativos y relaciones con entidades públicas</p>
+                        </div>
+                        <div class="expertise-card">
+                            <span class="expertise-icon" aria-hidden="true">🔍</span>
+                            <h3>Asesoría Preventiva</h3>
+                            <p>Identificación temprana de riesgos legales y estrategias de prevención</p>
+                        </div>
+                        <div class="expertise-card">
+                            <span class="expertise-icon" aria-hidden="true">📝</span>
+                            <h3>Redacción Jurídica</h3>
+                            <p>Documentos legales claros, precisos y estratégicamente estructurados</p>
+                        </div>
+                        <div class="expertise-card">
+                            <span class="expertise-icon" aria-hidden="true">🏭</span>
+                            <h3>Enfoque en Productividad</h3>
+                            <p>Guiamos la asesoría para que puedas lograr tus objetivos sin comprometer tus relaciones jurídicas</p>
+                        </div>
+                        <div class="expertise-card">
+                            <span class="expertise-icon" aria-hidden="true">🎓</span>
+                            <h3>Capacitación Jurídica</h3>
+                            <p>Diseño e implementación de espacios de formación legal práctica para públicos diversos, en areas legales de seguridad y salud en el trabajo, derecho laboral, derecho comercial o privado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+  
+        <section id="services" style="background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">⚖️ Servicios Jurídicos</h2>
+                <div style="text-align: center; margin-bottom: 3rem;">
+                    <p style="font-size: 1.2rem; color: var(--gris-ceniza); font-style: italic;">
+                        "No esperes a tener un problema legal para buscar soluciones. Escríbeme y demos el primer paso hoy."
+                    </p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card" style="border-left: 5px solid #28a745;">
+                        <span style="background: #28a745; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🟢 BÁSICO</span>
+                        <h3>Diagnóstico Legal Inicial</h3>
+                        <p>Sesión virtual gratuita de 15 minutos para analizar la viabilidad de tu caso y definir si puedo ayudarte efectivamente.</p>
+                        <p><strong>Importante:</strong> No es una asesoría completa, sino un primer contacto estratégico.</p>
+                        <!-- <div class="service-price" style="background: #28a745;">GRATUITO</div> -->
+                    </div>
+                    
+                    <div class="service-card" style="border-left: 5px solid #28a745;">
+                        <span style="background: #28a745; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🟢 BÁSICO</span>
+                        <h3>Revisión y Corrección Jurídica</h3>
+                        <p>Corrección de documentos ya redactados, mejorando estilo, contenido y solidez jurídica.</p>
+                        <p><strong>Ideal para:</strong> Cuando ya tienes un documento pero necesitas que sea revisado por un profesional.</p>
+                        <!-- <div class="service-price" style="background: #28a745;">$150.000 - $250.000</div> -->
+                    </div>
+                    
+                    <div class="service-card" style="border-left: 5px solid #007bff;">
+                        <span style="background: #007bff; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🔵 INTERMEDIO</span>
+                        <h3>Consulta Legal Detallada</h3>
+                        <p>Análisis jurídico completo con guía de acción personalizada. No incluye redacción documental.</p>
+                        <p><strong>Beneficio:</strong> Conoce tus opciones legales y el camino a seguir de manera clara.</p>
+                        <!-- <div class="service-price" style="background: #007bff;">$200.000</div> -->
+                    </div>
+                    
+                    <div class="service-card" style="border-left: 5px solid #007bff;">
+                        <span style="background: #007bff; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🔵 INTERMEDIO</span>
+                        <h3>Acompañamiento en Trámites</h3>
+                        <p>Asesoría personalizada por etapas en procesos como reclamos, radicaciones y gestiones administrativas.</p>
+                        <p><strong>Incluye:</strong> Guía paso a paso y apoyo durante todo el proceso.</p>
+                        <!-- <div class="service-price" style="background: #007bff;">Desde $300.000</div> -->
+                    </div>
+                    
+                    <div class="service-card" style="border-left: 5px solid #6f42c1;">
+                        <span style="background: #007bff; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🔵 INTERMEDIO</span>
+                        <h3>Derecho de Petición Estándar</h3>
+                        <p>Redacción completa con análisis jurídico, lenguaje claro y entrega en PDF.</p>
+                        <p><strong>Perfecto para:</strong> Reclamaciones ante EPS, entidades financieras, servicios públicos, entidades privadas, entre otros.</p>
+                        <!-- <div class="service-price" style="background: #6f42c1;">$500.000</div> -->
+                    </div>
+                    
+                    <div class="service-card" style="border-left: 5px solid #6f42c1;">
+                        <span style="background: #6f42c1; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🟣 PREMIUM</span>
+                        <h3>Derecho de Petición Premium</h3>
+                        <p>Redacción estratégica + seguimiento personalizado + versión editable para futuras gestiones.</p>
+                        <p><strong>Valor agregado:</strong> Acompañamiento hasta obtener respuesta.</p>
+                        <!-- <div class="service-price" style="background: #6f42c1;">$700.000</div> -->
+                    </div>
+                    
+                    <div class="service-card" style="border-left: 5px solid #dc3545;">
+                        <span style="background: #dc3545; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🔴 ESPECIALIZADO</span>
+                        <h3>Redacción de Tutela</h3>
+                        <p>Construcción completa con narrativa precisa y fundamentos constitucionales sólidos.</p>
+                        <p><strong>Para casos de:</strong> Vulneración de derechos fundamentales que requieren acción judicial.</p>
+                        <!-- <div class="service-price" style="background: #dc3545;">$1.200.000</div> -->
+                    </div>
+
+                    <div class="service-card" style="border-left: 5px solid #dc3545;">
+                        <span style="background: #dc3545; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🔴 ESPECIALIZADO</span>
+                        <h3>Capacitaciones Jurídicas</h3>
+                        <p>Sesiones virtuales o presenciales sobre derechos fundamentales, trámites administrativos, prevención de riesgos laborales, SARLAFT, legales en general y más.</p>
+                        <p><strong>Ideal para:</strong> Grupos, fundaciones, empresas o líderes comunitarios.</p>
+                        <!-- <div class="service-price" style="background: #dc3545;">$1.200.000</div> -->
+                    </div>
+                    <div class="service-card" style="border-left: 5px solid #dc3545;">
+                        <span style="background: #dc3545; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.9rem; font-weight: 600;">🔴 ESPECIALIZADO</span>
+                        <h3>Parte Legal en Reuniones</h3>
+                        <p>Asistencia a espacios de toma de decisiones para analizar los aspectos legales de lo discutido, advertir riesgos y proponer rutas seguras.</p>
+                        <p><strong>Beneficio:</strong> Evita consecuencias jurídicas indeseadas en tiempo real.</p>
+                        <!-- <div class="service-price" style="background: #dc3545;">$1.200.000</div> -->
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <section id="case-study">
+            <div class="container">
+                <div class="case-study">
+                    <h3>🏆 Algunos Casos </h3>
+                    <p>Un ciudadano pensionado fue vinculado a un crédito con seguros que nunca autorizó. Aunque creyó saldada su deuda, continuaron los cobros y descuentos injustificados. Intervine mediante un <strong>derecho de petición estructurado estratégicamente</strong>, demostrando posibles vulneraciones a derechos fundamentales como el mínimo vital y la seguridad jurídica. Este caso evidenció cómo una acción jurídica bien planteada puede evitar el desgaste de un litigio.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div class="container">
+                <h2 class="section-title">💸 Tabla de Servicios y Precios</h2>
+                <div class="pricing-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Servicio</th>
+                                <th>Descripción</th>
+                                <th>Precio COP</th>
+                                <th>Categoría</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: rgba(40, 167, 69, 0.1);">
+                                <td><strong>Diagnóstico legal inicial</strong></td>
+                                <td>Sesión virtual gratuita de 15 min para analizar viabilidad del caso</td>
+                                <td><strong>GRATUITO</strong></td>
+                                <td>🟢 Básico</td>
+                            </tr>
+                            <tr  style="background: rgba(40, 167, 69, 0.1);">
+                                <td><strong>Revisión y corrección jurídica</strong></td>
+                                <td>Corrección de documentos ya redactados (estilo, contenido, solidez)</td>
+                                <td>$150.000 - $250.000</td>
+                                <td>🟢 Básico</td>
+                            </tr>
+                            <tr style="background: rgba(0, 123, 255, 0.1);">
+                                <td><strong>Consulta legal detallada</strong></td>
+                                <td>Análisis jurídico con guía de acción (sin redacción documental)</td>
+                                <td>$200.000</td>
+                                <td>🔵 Intermedio</td>
+                            </tr>
+                            <tr style="background: rgba(0, 123, 255, 0.1);">
+                                <td><strong>Acompañamiento en trámites</strong></td>
+                                <td>Asesoría personalizada por etapas (ej. reclamos, radicación)</td>
+                                <td>$300.000</td>
+                                <td>🔵 Intermedio</td>
+                            </tr>
+                            <tr style="background: rgba(0, 123, 255, 0.1);">
+                                <td><strong>Derecho de petición estándar</strong></td>
+                                <td>Redacción con análisis jurídico, lenguaje claro, entrega en PDF</td>
+                                <td>$500.000</td>
+                                <td>🔵 Intermedio</td>
+                            </tr>
+                            <tr style="background: rgba(111, 66, 193, 0.1);">
+                                <td><strong>Derecho de petición premium</strong></td>
+                                <td>Redacción estratégica + seguimiento + versión editable</td>
+                                <td>$700.000</td>
+                                <td>🟣 Premium</td>
+                            </tr>
+                            <tr style="background: rgba(220, 53, 69, 0.1);">
+                                <td><strong>Redacción de tutela</strong></td>
+                                <td>Construcción completa, narrativa precisa, fundamentos constitucionales</td>
+                                <td>$1.200.000</td>
+                                <td>🔴 Especializado</td>
+                            </tr>
+                            <tr style="background: rgba(220, 53, 69, 0.1);">
+                                <td><strong>Capacitaciones Jurídicas</strong></td>
+                                <td>Sesiones de formación teóricas para equipos de trabajo o comunidades. Contenido adaptado a las necesidades del público (derechos fundamentales, deberes ciudadanos, gestión legal básica, etc.).</td>
+                                <td>A convenir</td>
+                                <td>🔴 Especializado</td>
+                            </tr>
+                                <tr style="background: rgba(220, 53, 69, 0.1);">
+                                <td><strong>Intervención Legal en Reuniones</strong></td>
+                                <td>Acompañamiento en reuniones estratégicas o comunitarias, con análisis legal en tiempo real y recomendaciones inmediatas. Ideal para comités, juntas o asambleas.</td>
+                                <td>A convenir</td>
+                                <td>🔴 Especializado</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="disclamer">
+                <h3>🛈 Nota importante sobre los precios</h3>
+                <p>Los valores aquí presentados son estimaciones referenciales para efectos ilustrativos y pueden variar según la complejidad del caso, el nivel de urgencia, la documentación disponible y otros factores relevantes. No constituyen una oferta comercial en los términos del artículo 845 del Código de Comercio ni generan obligación contractual alguna. El valor definitivo de cada servicio será acordado con el cliente de manera previa, clara y escrita, en virtud del principio de autonomía de la voluntad privada y en observancia de los límites éticos de la profesión.</p>
+                </div>
+
+                <br>
+                
+                <div style="background: var(--azul-cobalto); color: var(--blanco-puro); padding: 2rem; border-radius: 15px; margin-top: 2rem; text-align: center;">
+                    <h3 style="margin-bottom: 1rem; color: var(--amarillo-mostaza);">💳 Condiciones de Pago</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; text-align: left;">
+                        <div>
+                            <h4>Formas de Pago</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>💰 Nequi</li>
+                                <li>🏦 Banco Davivienda</li>
+                                <li>📄 Cunenta de Cobro persona Natural</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Modalidad</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>📊 Anticipo del 50%</li>
+                                <li>✅ Saldo contra entrega</li>
+                                <li>💻 Entrega digital y/o presencial</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4>Garantía</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li>🔄 Revisiones incluidas</li>
+                                <li>📞 Soporte post-servicio</li>
+                                <li>📋 Recomendaciones de seguimiento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" style="background: #f8f9fa;">
+            <div class="container">
+                <h2 class="section-title">🧭 Proceso de Atención</h2>
+                <div class="process-steps">
+                    <div class="process-step" data-step="1">
+                        <h4>Diagnóstico inicial gratuito</h4>
+                        <p>Conversación profesional de 15 minutos para entender tu necesidad y valorar si puedo ayudarte efectivamente.</p>
+                    </div>
+                    <div class="process-step" data-step="2">
+                        <h4>Propuesta clara y sin sorpresas</h4>
+                        <p>Si el caso es viable, te presento el servicio sugerido, su alcance, duración y costo con total transparencia.</p>
+                    </div>
+                    <div class="process-step" data-step="3">
+                        <h4>Acompañamiento cercano</h4>
+                        <p>Durante el proceso, mantengo comunicación clara y constante, enfocándome en prevenir futuros problemas.</p>
+                    </div>
+                    <div class="process-step" data-step="4">
+                        <h4>Entrega y seguimiento</h4>
+                        <p>Entrega profesional con recomendaciones post-servicio para que sepas exactamente qué hacer después.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="contact">
+            <div class="container">
+                <h2 class="section-title">📞 Solicita tu diagnóstico legal gratuito</h2>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">Tu nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">Número de teléfono *</label>
+                                <input type="tel" id="telefono" name="telefono" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Correo electrónico *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ciudad">Ciudad donde te encuentras *</label>
+                                <input type="text" id="ciudad" name="ciudad" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="servicio">¿Qué tipo de asesoría necesitas? *</label>
+                            <select id="servicio" name="servicio" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="consulta">Consulta jurídica preventiva</option>
+                                <option value="contrato">Redacción o revisión de contrato</option>
+                                <option value="peticion">Derecho de petición o reclamación</option>
+                                <option value="tramite">Acompañamiento en trámite administrativo</option>
+                                <option value="otro">Otro (especificar en la descripción)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="situacion">Cuéntame brevemente tu situación *</label>
+                            <textarea id="situacion" name="situacion" placeholder="Describe los hechos más importantes: ¿qué pasó?, ¿cuándo ocurrió?, ¿con qué entidad o persona tienes el problema?, ¿qué documentos tienes relacionados?" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="objetivo">¿Qué esperas lograr con la asesoría? *</label>
+                            <textarea id="objetivo" name="objetivo" placeholder="Por ejemplo: 'Quiero que me ayudes a redactar un derecho de petición para reclamar descuentos indebidos' o 'Necesito revisar un contrato antes de firmarlo' o 'Quiero saber qué opciones legales tengo para mi caso'" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="urgencia">¿Qué tan urgente es tu caso? *</label>
+                            <select id="urgencia" name="urgencia" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="alta">Alta - Necesito respuesta en 1-2 días</option>
+                                <option value="media">Media - Puedo esperar hasta una semana</option>
+                                <option value="baja">Baja - No hay afán, es preventivo</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="documentos">¿Tienes documentos relacionados con tu caso?</label>
+                            <textarea id="documentos" name="documentos" placeholder="Menciona qué documentos tienes (contratos, comunicaciones, recibos, etc.). Los podremos revisar durante la consulta." rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="horario">¿Cuál es tu horario preferido para la consulta gratuita?</label>
+                            <select id="horario" name="horario">
+                                <option value="">Selecciona una opción</option>
+                                <option value="manana">Mañanas (8:00 AM - 12:00 PM)</option>
+                                <option value="tarde">Tardes (2:00 PM - 6:00 PM)</option>
+                                <option value="noche">Noches (6:00 PM - 8:00 PM)</option>
+                                <option value="flexible">Soy flexible con el horario</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn">Enviar Solicitud de Consulta Gratuita</button>
+                    </form> -->
+
+<section id="contact" style="background: var(--gris-claro); padding: 4rem 0;">
+  <div class="container">
+    <h2 class="section-title" style="margin-bottom: 1rem;">📞 Solicita tu diagnóstico legal gratuito</h2>
+    <p style="text-align: center; font-size: clamp(1rem, 2vw, 1.2rem); color: var(--gris-ceniza); margin-bottom: 3rem;">
+      Agenda tu primer encuentro de 15 minutos para explorar tu caso conmigo. Es gratuito, confidencial y sin compromiso.
+    </p>
+    <div style="background: var(--blanco-puro); padding: 2rem; border-radius: 20px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); max-width: 600px; margin: 0 auto;">
+                <div class="disclamer">
+                <h3>🛈 Nota importante sobre la cita</h3>
+                <p>Luego de solicitarla recuerda revisar tu correo electronico y confirmar fecha, hora y lugar de la cita. ahí mismo podras cancelarla o cambiarla si deseas.</p>
+                </div>
+        <div class="calendly-inline-widget"
+           data-url="https://calendly.com/cpenaloza-legal/30min?preview_source=et_card&month=2025-07"
+           style="min-width: 100px; height: 900px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contacto Directo</h4>
+                    <span>
+                        📞 
+                    <a class="correo"  target="_blank"  href="https://web.whatsapp.com/send/?phone=573505206568&text=Hola, Me gustaria que me ayudarascon este caso." onclick="openWhatsApp()" class="whatsapp-btn">
+                            350 520 6568</a>
+                    </span>
+                    <br>
+                    <span> ✉️ <a  target="_blank" href="mailto:cpenaloza.legal@gmail.com" class="correo">cpenaloza.legal@gmail.com</a> </span>
+                    <p>📍 Cali, Valle del Cauca</p>
+                    <p>(Atención nacional virtual)</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Formas de Pago</h4>
+                    <p>💳 Nequi</p>
+                    <p>🏦 Banco Davivienda</p>
+                    <p>💰 Anticipo del 50%</p>
+                    <p>📄 Cuentas de Cobro persona Natural</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Atención</h4>
+                    <p>🕐 Lunes a Viernes</p>
+                    <p>⏰ 9:00 AM - 17:00 PM</p>
+                    <p>💻 Consultas virtuales</p>
+                    <p>🤝 Reuniones presenciales en Cali</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.2);">
+                <p>&copy; 2025 Cristian David Peñaloza Barón - Asesor Jurídico. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
